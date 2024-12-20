@@ -1,4 +1,3 @@
-import React from 'react';
 import { Player, Role } from '../types/game';
 import PlayerCard from './PlayerCard';
 
@@ -24,7 +23,7 @@ export default function PlayerList({
   }
 
   return (
-    <div className="space-y-4">
+    <div className="max-h-64 overflow-y-auto space-y-4 border rounded-lg p-4 bg-white shadow-sm">
       {players.map((player) => (
         <PlayerCard
           key={player.id}
